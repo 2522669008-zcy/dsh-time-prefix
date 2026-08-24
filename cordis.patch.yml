@@ -1,0 +1,7 @@
+# dsh-time-prefix bundle patch: mounts the plugin into a test profile.
+# The row id can be anything unique; the name must match the exported cordis name.
+- insert:
+    - id: dsh-time-prefix
+      name: 'dsh-time-prefix'
+      config:
+        enabled: true
