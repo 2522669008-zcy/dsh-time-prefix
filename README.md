@@ -4,10 +4,26 @@
 
 ## 安装
 
+### 懒人方式
+
+对你的 dsh 说：
+
+> 安装这个 GitHub 仓库里的插件：https://github.com/2522669008-zcy/dsh-time-prefix
+
+### 手动方式
+
 ```sh
-dsh plugin --profile web add F:\path\to\dsh-time-prefix
+git clone https://github.com/2522669008-zcy/dsh-time-prefix
+dsh plugin --profile web add ./dsh-time-prefix
 ```
 
+如果你的 `dsh` 命令不在 PATH 里，用：
+
+```sh
+npx @deepseek-ai/dsh plugin --profile web add ./dsh-time-prefix
+```
+
+安装后重启 dsh Web UI 即可。
 ## 功能
 
 - 每条用户消息前自动插入 `【2026/08/23，22:36】` 这样的时间文本
