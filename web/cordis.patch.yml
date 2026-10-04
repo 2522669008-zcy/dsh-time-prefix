@@ -1,0 +1,11 @@
+# dsh-time-prefix (web) bundle patch: mounts the plugin into the profile.
+#
+# The row `id` is the settings namespace the plugin's Config is edited under —
+# the settings service addresses configurable plugins by profile entry id, so the
+# client half looks the form up by this exact id. The `name` must match the
+# plugin's exported cordis name.
+- insert:
+    - id: dsh-time-prefix
+      name: 'dsh-time-prefix'
+      config:
+        enabled: true

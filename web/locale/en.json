@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Time Prefix",
+    "description": "Prepend the current local time to each user message."
+  }
+}

@@ -1,0 +1,9 @@
+# dsh-time-prefix-desktop bundle patch: mounts the plugin into the profile.
+#
+# There is no `config` here on purpose. This variant has no Config schema and no
+# settings card, so the row carries no fields to edit; the desktop plugin
+# manager's own enable/disable switch is the only control, and it acts by
+# adding or removing this row.
+- insert:
+    - id: dsh-time-prefix-desktop
+      name: 'dsh-time-prefix-desktop'

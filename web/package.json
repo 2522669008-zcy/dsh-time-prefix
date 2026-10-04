@@ -1,6 +1,6 @@
 {
   "name": "dsh-time-prefix",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Send-time prefix plugin: prepend local time to user messages, with a settings toggle.",
   "private": true,
   "type": "module",
@@ -8,9 +8,23 @@
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "locale/*.json",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.0-rc.2 <0.3.0"
   },
   "dsh": {
+    "manifestVersion": 1,
     "bundle": {
       "patch": "./cordis.patch.yml"
     },
@@ -20,11 +34,7 @@
     }
   },
   "dependencies": {
-    "@deepseek-ai/schemastery": "^3.18.1",
-    "@deepseek-ai/dsh-settings": "^0.1.0-rc.6"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0"
+    "@deepseek-ai/schemastery": "~3.18.4"
   },
   "license": "MIT"
 }
